@@ -1,0 +1,120 @@
+:root {
+    --font-color: rgb(250, 56, 221)
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: 1px dotted red;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+.top-header {
+    border: 2px solid black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    padding: 1em;
+}
+
+
+.banner {
+    margin-left: 25%;
+    width: 800px;
+    object-fit: cover;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 25px;
+}
+
+
+.nav-links {
+    font-size: 30px;
+    padding: .25em;
+    border-radius: 4px;
+    border: 2px solid black;
+    color: black;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    text-align: center;
+}
+
+.overview-title {
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.overview-content {
+    font-size: 27px;
+    padding: 1em;
+    background-color: var(--font-color);
+    width: 50%;
+}
+
+.other-information {
+    display: flex;
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 4%;
+    border: 1px solid black;
+    text-align: start;
+    padding: 1em;
+    background-color: var(--font-color);
+}
+
+.type-title,
+.about-us-title,
+.history-title {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+
+.history {
+    border-right: 1px solid;
+    padding: .5em;
+}
+
+.about-us {
+    border-right: 1px solid;
+    padding: .5em;
+}
+
+.type {
+    padding: .5em;
+}
