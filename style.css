@@ -38,6 +38,7 @@ body{
     color: white;
     padding: .5em;
     border-radius: 50px;
+    font-weight: 300;
 }
 .hero-background{
     position: relative;
@@ -59,20 +60,56 @@ body{
 }
 
 .hero-content{
-    width: 50%;
-    outline: 1px solid;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2em;
 }
-
 .hero-title{
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .hero-description{
-    font-size: 22px;
-    width: 70%;
+    font-size: 25px;
 }
 
 .btns{
     font-size: 25px;
     margin-block: 1em;
+}
+.btns > a{
+    margin-inline: .5em;
+}
+
+.product-image{
+    height: 200px;
+    width: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-gallery{
+    display: flex;
+    margin-block-start: 2em;
+    width: 70%;
+    margin-inline: auto;
+    gap: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.product-title{
+    font-size: 23px;
+}
+
+.product-content{
+    background-color: #343434;
+    padding-block: 2em;
+    border-radius: 0 0 10px 10px;
+    color: white;
 }
