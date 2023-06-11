@@ -1,115 +1,183 @@
-body{
-    font-family: 'Quicksand', sans-serif;
-    height: 400dvh;
-    color: azure;
+:root {
+  --primary-font-clr: #212122;
+  --primary-bg-clr: #f0e1da;
+  --secondary-bg-clr: #d5977e;
+  --main-bg-clr: #f6f7f9;
 }
 
-.navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-    margin-inline: auto;
-    padding: 1em;
+body {
+  background-color: var(--primary-bg-clr);
+  color: var(--primary-font-clr);
+  font-family: "Quicksand", sans-serif;
 }
 
-.nav-logo{
-    width: auto;
-    height: 80px;
-    mix-blend-mode: multiply;
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2em;
+  padding-block: 0.5em;
 }
-.right-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    column-gap: 2em;
+.menu {
+  width: 40px;
+  height: 40px;
+  margin-inline-end: 25em;
 }
-
-.links{
-    font-size: 21px;
-    margin-inline-end: .5em;
-    color: azure;
-}
-
-.sign{
-    font-size: 23px;
-    background-color: #877A4F;
-    color: white;
-    padding: .5em;
-    border-radius: 50px;
-    font-weight: 300;
-}
-.hero-background{
-    position: relative;
-    width: 100%;
-    height: 85dvh;
-}
-.hero-background::before{
-    content: '';
-    inset: 0;
-    position: absolute;
-    background-image: url(/media/hero-background.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    isolation: isolate;
-    filter: brightness(40%);
-    background-attachment: fixed;
+.nav-right {
+  display: flex;
+  gap: 1em;
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.hero-content{
-    width: 45%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 2em;
-}
-.hero-title{
-    font-size: 45px;
+.nav-right > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
 }
 
-.hero-description{
-    font-size: 25px;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  height: 80dvh;
+  font-weight: 500;
+  color: #f7f7f7;
+}
+.hero-left {
+  width: 40%;
+  height: auto;
 }
 
-.btns{
-    font-size: 25px;
-    margin-block: 1em;
-}
-.btns > a{
-    margin-inline: .5em;
+.hero-title-main {
+  margin: 0;
 }
 
-.product-image{
-    height: 200px;
-    width: auto;
-    border-radius: 10px 10px 0 0;
+.hero-title-second {
+  margin-block: 0.5em;
+}
+.hero-content {
+  font-size: 23px;
+  line-height: 1.7;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/media/flowers.jpg);
+  z-index: -1;
+  isolation: isolate;
+  filter: brightness(50%);
 }
 
-.product-gallery{
-    display: flex;
-    margin-block-start: 2em;
-    width: 70%;
-    margin-inline: auto;
-    gap: 2em;
-    justify-content: space-evenly;
-    align-items: center;
-    color: black;
-    text-align: center;
+.hero-btn {
+  font-size: 23px;
+  background-color: var(--secondary-bg-clr);
+  color: var(--primary-font-clr);
+  padding: 0.5em 1em;
+  border-radius: 25px;
 }
 
-.product-title{
-    font-size: 23px;
+.btn {
+  margin-block: 1.25em;
+  text-transform: uppercase;
 }
 
-.product-content{
-    background-color: #343434;
-    padding-block: 2em;
-    border-radius: 0 0 10px 10px;
-    color: white;
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 300ms;
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-rows: 500px 500px;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  isolation: isolate;
+}
+.product-section{
+  background-color: #bebebe;
+}
+.product-title {
+  text-align: center;
+  font-size: 60px;
+  padding-block: 1em;
+  margin: 0;
+}
+.product-container {
+  border: 1px solid var(--primary-font-clr);
+  aspect-ratio: 1/1.25;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  background-color: transparent;
+  position: relative;
+  color: var(--main-bg-clr);
+  overflow: hidden;
+}
+.product-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  isolation: isolate;
+  background-size: cover;
+  filter: brightness(20%) blur(2px);
+  transform: scale(1.5);
+  overflow: hidden;
+  background-position: center;
+}
+.product-container:nth-child(1)::after {
+  background-image: url(/media/blue-dress.jpg);
+}
+.product-container:nth-child(2)::after {
+  background-image: url(/media/mens-bracelet.png);
+}
+.product-container:nth-child(3)::after {
+  background-image: url(/media/gold-earring.png);
+}
+
+.product-container:nth-child(4)::after {
+  background-image: url(/media/white-heels.png);
+}
+.product-container:nth-child(5)::after {
+  background-image: url(/media/womens-necklace.png);
+}
+.product-container:nth-child(6)::after {
+  background-image: url(/media/grey-outfit.jpg);
+}
+.product-img {
+  margin-inline: auto;
+  height: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.price {
+  font-weight: 500;
+}
+.description {
+  font-size: 19px;
+}
+.product-btn {
+  display: block;
+  margin-block: 0.5em;
+  padding: 0.5em;
+  width: fit-content;
+  margin-inline: auto;
+  background-color: var(--secondary-bg-clr);
+  color: var(--primary-bg-clr);
+  border-radius: 20px;
+  font-size: 23px;
 }
