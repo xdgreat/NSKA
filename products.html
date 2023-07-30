@@ -14,6 +14,27 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .product-container:nth-child(1)::after {
+        background-image: url(/media/unnamed.jpg);
+      }
+      .product-container:nth-child(2)::after {
+        background-image: url(/media/bluedress.jpg);
+      }
+      .product-container:nth-child(3)::after {
+        background-image: url(/media/accessoryjpg.jpg);
+      }
+
+      .product-container:nth-child(4)::after {
+        background-image: url(/media/wintersetjpg.jpg);
+      }
+      .product-container:nth-child(5)::after {
+        background-image: url(/media/watchjpg.jpg);
+      }
+      .product-container:nth-child(6)::after {
+        background-image: url(/media/earringjpg.jpg);
+      }
+    </style>
   </head>
   <body>
     <nav class="navigation">
@@ -29,5 +50,98 @@
         <a href="./products.html" class="links">Products</a>
       </div>
     </nav>
+    <section class="product-section">
+      <h1 class="product-title">New Arrivals</h1>
+      <div class="product-gallery">
+        <!-- Product 1 -->
+        <div class="product-container">
+          <img src="/media/unnamed.jpg" class="product-img" />
+          <div class="product-content">
+            <h1 class="price">$59.95 FJD</h1>
+            <h2 class="product-name">Ballet Style Flats</h2>
+            <!-- Additional Title -->
+            <p class="description">
+              Gives you a classic look perfect for dancers trying to show their
+              flare or people who take interest in contemporary dance.
+            </p>
+          </div>
+          <a href="" class="product-btn">Add To Cart</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-container">
+          <img src="/media/bluedress.jpg" class="product-img" />
+          <div class="product-content">
+            <h1 class="price">$79.95 FJD</h1>
+            <h2 class="product-name">Mini Halter Dress</h2>
+            <!-- Additional Title -->
+            <p class="description">
+              Best option for the summer or spring. Its beautiful white with a
+              hint of pale yellow color gives it a youthful glow.
+            </p>
+          </div>
+          <a href="" class="product-btn">Add To Cart</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-container">
+          <img src="/media/accessoryjpg.jpg" class="product-img" />
+          <div class="product-content">
+            <h1 class="price">$39.00 FJD</h1>
+            <h2 class="product-name">Fashion Harness Accessory</h2>
+            <!-- Additional Title -->
+            <p class="description">
+              People who love to experiment with their style to get the elegant
+              and dark aesthetic.
+            </p>
+          </div>
+          <a href="" class="product-btn">Add To Cart</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-container">
+          <img src="/media/wintersetjpg.jpg" class="product-img" />
+          <div class="product-content">
+            <h1 class="price">$149.95 FJD</h1>
+            <h2 class="product-name">Men's Winter Set</h2>
+            <!-- Additional Title -->
+            <p class="description">
+              Black clothing set consisting of blazer, pants, and shirt. To suit
+              the cool weather.
+            </p>
+          </div>
+          <a href="" class="product-btn">Add To Cart</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-container">
+          <img src="/media/watchjpg.jpg" class="product-img" />
+          <div class="product-content">
+            <h1 class="price">$79.99 FJD</h1>
+            <h2 class="product-name">Men's Wrist Watch</h2>
+            <!-- Additional Title -->
+            <p class="description">
+              Waterproof, Leather wristband comfortable to wear best choice for
+              looking at the time and looking good.
+            </p>
+          </div>
+          <a href="" class="product-btn">Add To Cart</a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-container">
+          <img src="/media/earringjpg.jpg" class="product-img" />
+          <div class="product-content">
+            <h1 class="price">$20.00 FJD</h1>
+            <h2 class="product-name">Gold Plated Hoop Earrings</h2>
+            <!-- Additional Title -->
+            <p class="description">
+              Simple gold earrings that will be a great gift.
+            </p>
+          </div>
+          <a href="" class="product-btn">Add To Cart</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

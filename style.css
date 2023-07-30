@@ -143,25 +143,7 @@ body {
   overflow: hidden;
   background-position: center;
 }
-.product-container:nth-child(1)::after {
-  background-image: url(/media/blue-dress.jpg);
-}
-.product-container:nth-child(2)::after {
-  background-image: url(/media/mens-bracelet.png);
-}
-.product-container:nth-child(3)::after {
-  background-image: url(/media/gold-earring.png);
-}
 
-.product-container:nth-child(4)::after {
-  background-image: url(/media/white-heels.png);
-}
-.product-container:nth-child(5)::after {
-  background-image: url(/media/womens-necklace.png);
-}
-.product-container:nth-child(6)::after {
-  background-image: url(/media/grey-outfit.jpg);
-}
 .product-img {
   margin-inline: auto;
   height: 200px;
@@ -402,4 +384,16 @@ footer {
   font-size: 23px;
   margin-inline: auto;
   margin-block-end: 5em;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 1em;
 }
